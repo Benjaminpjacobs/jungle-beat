@@ -8,7 +8,7 @@ class Node
   
   def tail
     if self.next.nil?
-      return self
+      self
     else
       self.next.tail
     end

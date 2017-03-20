@@ -1,4 +1,4 @@
-require_relative 'node'
+require '~/turing/1module/jungle_beat/lib/node'
 
 class LinkedList
   attr_reader :head
@@ -37,18 +37,18 @@ class LinkedList
   def pop
     deleted = head.tail.data
     go_to_node(count-2).next = nil
-    return deleted
+    deleted
   end
 
   def count
-   return 0 if head.nil? 
+   0 if head.nil? 
    counter = 1
    top = head
    until top.next.nil?
      counter += 1
      top = top.next
     end
-    return counter 
+    counter 
   end
 
   def prepend(data)

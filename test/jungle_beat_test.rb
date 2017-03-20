@@ -1,9 +1,9 @@
 gem 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative '../lib/linked_list'
-require_relative '../lib/node'
-require_relative '../jungle_beat'
+require '~/turing/1module/jungle_beat/lib/linked_list'
+require '~/turing/1module/jungle_beat/lib/node'
+require '~/turing/1module/jungle_beat/jungle_beat'
 
 class JungleBeatTest < Minitest::Test
   def test_node_class

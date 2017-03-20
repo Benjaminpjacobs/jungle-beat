@@ -1,4 +1,4 @@
-require_relative './lib/linked_list'
+require '~/turing/1module/jungle_beat/lib/linked_list'
 
 class JungleBeat
   attr_accessor :list, :valid_beats, :voice, :rate
@@ -33,6 +33,6 @@ class JungleBeat
     @rate = 500
   end
   def play
-    return `say -r #{rate} -v #{voice} #{list.to_string}`
+    `say -r #{rate} -v #{voice} #{list.to_string}`
   end
 end
